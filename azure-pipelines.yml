@@ -17,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: srlTest@0
+  inputs:
+    serverEndpoint: 'LoadRunner Cloud Demo'
+    tenantid: '688301833'
+    projectid: '1'
+    testid: '673'
+    sendEmail: true
